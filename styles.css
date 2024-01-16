@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+
+body{
+    background-color: #68ddbd;
+}
+
+/* NAVIGATION BAR */
+.nav{
+    background-color: whitesmoke;
+}
+
+.nav-link{
+    color: #131313;
+}
+
+/* BANNER */
+.banner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 611px; /* Ajusta el porcentaje según tus necesidades */
+    object-fit: cover;
+}
+
+.glass-container {
+    width: 35rem;
+    height: 30rem;
+    border: 2px solid #fafafa10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fafafa10;
+    backdrop-filter: blur(0.3rem);
+    z-index: 2;
+}
+
+.Banner-text{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna (vertical) */
+    justify-content: center;
+    align-items: center;
+}
+
+.Banner-text h1 {
+    font-size: 4.5rem;
+    background-color: rgba(0, 0, 0, 0.498);
+
+}
+
+.Banner-text p {
+    font-size: 20px;
+    margin-top: 10px; /* Ajusta según la separación que desees entre el texto y el párrafo */
+    color: black; /* Puedes ajustar el color del texto adicional */
+    background-color: rgba(255, 255, 255, 0.685);
+    width: 100%;
+}
