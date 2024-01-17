@@ -4,12 +4,20 @@
 }
 
 body{
-    background-color: #68ddbd;
+    background-color: #69cbb0;
 }
 
 /* NAVIGATION BAR */
 .nav{
     background-color: whitesmoke;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 .nav-link{
@@ -64,3 +72,135 @@ body{
     background-color: rgba(255, 255, 255, 0.685);
     width: 100%;
 }
+
+/* CONOCENOS */
+.conocenos .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.conocenos .container .col {
+    width: 100%;
+}
+
+.conocenos .container .col.izq {
+    overflow: hidden;
+    margin-top: 20px; /* Ajusta la separación según tus necesidades */
+}
+
+.conocenos .container .col .titulo-seccion {
+    padding: 3.125rem;
+    padding-right: 0;
+}
+
+.conocenos .container .col .titulo-seccion h2 {
+    text-align: center;
+}
+
+.conocenos .container .col .titulo-seccion p {
+    padding-bottom: 1.125rem;
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+.conocenos .container .col .titulo-seccion p:last-child {
+    padding-bottom: 0;
+}
+
+.conocenos .container .col .imagen-estatica {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    background-size: contain; /* Ajusta esta propiedad según tus necesidades */
+    background-image: url(img/mision.jpg); /* Reemplaza 'tu-imagen.jpg' con la ruta correcta de tu imagen */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* HORARIOS */
+.Horarios{
+    background-color: #27ae60;
+}
+.Horarios .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Horarios .container .col {
+    width: 100%;
+}
+
+.Horarios .container .col.izq {
+    overflow: hidden;
+    margin-top: 20px; /* Ajusta la separación según tus necesidades */
+}
+
+.Horarios .container .col .titulo-seccion {
+    padding: 3.125rem;
+    padding-right: 0;
+}
+
+.Horarios .container .col .titulo-seccion h2 {
+    color: #fff;
+}
+
+.Horarios .container .col .titulo-seccion p {
+    color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 1.125rem;
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+.Horarios .container .col .titulo-seccion p:last-child {
+    padding-bottom: 0;
+}
+
+.Horarios .container .col .imagen-estatica {
+    width: 100%;
+    height: 400px;
+    background-image: url(img/tu-imagen-horarios.jpg); /* Reemplaza 'tu-imagen-horarios.jpg' con la ruta correcta de tu imagen */
+    background-size: contain; /* Ajusta esta propiedad según tus necesidades */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilo adicional para el fondo y separador de la sección de Horarios */
+img{
+    width: 100%;
+    height: 100%;
+}
+.Horarios .container .col.horarios-background {
+    background-color: #27ae60; /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto */
+}
+
+.Horarios .container .col.horarios-separator {
+
+    padding-left: 20px; /* Ajusta el espacio del separador según tus necesidades */
+}
+
+.Horarios .container .col .titulo-seccion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Horarios .container .col .titulo-seccion li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.Horarios .container .col .titulo-seccion li:before {
+    content: '\2022'; /* Agrega un símbolo de viñeta antes de cada elemento de la lista */
+    color: #fff; /* Cambia el color del símbolo de viñeta */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.Horarios .container .col .titulo-seccion h2 {
+    margin-bottom: 20px; /* Agrega un espacio entre el título y la lista */
+}
+
